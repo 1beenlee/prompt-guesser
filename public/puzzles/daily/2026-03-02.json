@@ -1,0 +1,41 @@
+{
+  "id": "2026-03-02",
+  "publishAtUtc": "2026-03-02T00:00:00Z",
+  "asset": {
+    "type": "image",
+    "path": "/puzzles/assets/2026-03-02.svg",
+    "alt": "Daily prompt puzzle"
+  },
+  "mode": "simple",
+  "choices": [
+    {
+      "key": "A",
+      "promptShort": "Red origami crane, flat, cream bg, long 45° shadow"
+    },
+    {
+      "key": "B",
+      "promptShort": "Flat red bird icon on white"
+    },
+    {
+      "key": "C",
+      "promptShort": "Origami crane in red on beige, soft light"
+    }
+  ],
+  "answer": {
+    "choiceKey": "A",
+    "fullPrompt": "flat red origami crane on cream background with a long 45-degree diagonal shadow, minimal poster style",
+    "negativePrompt": "photorealistic, watercolor, gradients, 3d render, line-art",
+    "recipe": {
+      "modelFamily": "SDXL",
+      "aspectRatio": "1:1",
+      "size": "1024x1024",
+      "seed": 123456
+    }
+  },
+  "tags": [
+    "origami",
+    "minimal",
+    "shadow"
+  ],
+  "difficulty": 2
+}
