@@ -26,6 +26,14 @@ Original prompt: 이 채팅에서는 Prompt Guessor 서비스를 개발합시다
   - Project created: `Prompt Guessor Launch`.
   - Initial issues created: `MOA-37` to `MOA-43`.
   - Run log comment recorded on `MOA-43`.
+- Security and CI gate sprint implemented:
+  - Upgraded stack: `next@16.1.6`, `react@19.2.4`, `react-dom@19.2.4`.
+  - Added Playwright E2E setup: `playwright.config.ts`, `tests/e2e/smoke.spec.ts`.
+  - Added scripts: `test:e2e`, `test:e2e:headed`.
+  - Expanded CI workflow with separate E2E job (Chromium).
+  - Updated ignore entries for Playwright artifacts.
+  - Validation passed: `npm run verify:cloudflare`, `npm run test:e2e`.
+  - Pushed remote commit: `d33f378`.
 
 ## TODO
 - Add additional daily puzzle files and real image assets.
