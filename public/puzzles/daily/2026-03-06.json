@@ -1,0 +1,40 @@
+﻿{
+    "id":  "2026-03-06",
+    "tags":  [
+                 "daily",
+                 "prompt-guessor"
+             ],
+    "publishAtUtc":  "2026-03-06T00:00:00Z",
+    "choices":  [
+                    {
+                        "key":  "A",
+                        "promptShort":  "Forest in fog, soft watercolor"
+                    },
+                    {
+                        "key":  "B",
+                        "promptShort":  "Misty pine forest trail at dawn, cinematic depth"
+                    },
+                    {
+                        "key":  "C",
+                        "promptShort":  "Pixel forest tileset"
+                    }
+                ],
+    "difficulty":  2,
+    "asset":  {
+                  "path":  "/puzzles/assets/2026-03-06.svg",
+                  "alt":  "Daily prompt puzzle",
+                  "type":  "image"
+              },
+    "mode":  "simple",
+    "answer":  {
+                   "negativePrompt":  "pixel art, low detail, clipart",
+                   "fullPrompt":  "misty pine forest trail at dawn, cinematic depth, layered fog, natural color grading, high dynamic range",
+                   "recipe":  {
+                                  "seed":  581869,
+                                  "aspectRatio":  "1:1",
+                                  "size":  "1024x1024",
+                                  "modelFamily":  "SDXL"
+                              },
+                   "choiceKey":  "B"
+               }
+}

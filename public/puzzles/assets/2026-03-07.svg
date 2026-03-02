@@ -1,0 +1,9 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <rect width="1024" height="1024" fill="#1f1147"/>
+  <g opacity="0.95">
+    <circle cx="300" cy="320" r="170" fill="#f472b6"/>
+    <rect x="360" y="420" width="360" height="220" rx="24" fill="#60a5fa"/>
+    <path d="M140 760 L520 180 L880 760 Z" fill="#ffffff22" stroke="#ffffff55" stroke-width="8"/>
+  </g>
+  <text x="64" y="960" fill="#ffffffcc" font-family="Segoe UI, Arial" font-size="42">Prompt Guessor 2026-03-07</text>
+</svg>

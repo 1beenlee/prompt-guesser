@@ -1,0 +1,40 @@
+﻿{
+    "id":  "2026-03-08",
+    "tags":  [
+                 "daily",
+                 "prompt-guessor"
+             ],
+    "publishAtUtc":  "2026-03-08T00:00:00Z",
+    "choices":  [
+                    {
+                        "key":  "A",
+                        "promptShort":  "Paper airplane over blueprint, clean minimal style"
+                    },
+                    {
+                        "key":  "B",
+                        "promptShort":  "3D jet model on white"
+                    },
+                    {
+                        "key":  "C",
+                        "promptShort":  "Comic airplane with speed lines"
+                    }
+                ],
+    "difficulty":  2,
+    "asset":  {
+                  "path":  "/puzzles/assets/2026-03-08.svg",
+                  "alt":  "Daily prompt puzzle",
+                  "type":  "image"
+              },
+    "mode":  "simple",
+    "answer":  {
+                   "negativePrompt":  "photoreal jet, cluttered background, messy lines",
+                   "fullPrompt":  "paper airplane casting long shadow over blueprint grid, clean minimal composition, editorial poster style",
+                   "recipe":  {
+                                  "seed":  454586,
+                                  "aspectRatio":  "1:1",
+                                  "size":  "1024x1024",
+                                  "modelFamily":  "SDXL"
+                              },
+                   "choiceKey":  "A"
+               }
+}

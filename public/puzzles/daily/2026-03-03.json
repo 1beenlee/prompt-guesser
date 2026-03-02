@@ -1,0 +1,40 @@
+﻿{
+    "id":  "2026-03-03",
+    "tags":  [
+                 "daily",
+                 "prompt-guessor"
+             ],
+    "publishAtUtc":  "2026-03-03T00:00:00Z",
+    "choices":  [
+                    {
+                        "key":  "A",
+                        "promptShort":  "Neon city skyline at dusk, cinematic haze"
+                    },
+                    {
+                        "key":  "B",
+                        "promptShort":  "Isometric cyberpunk city block, cyan-magenta glow, rainy streets"
+                    },
+                    {
+                        "key":  "C",
+                        "promptShort":  "Minimal city icon, flat vector"
+                    }
+                ],
+    "difficulty":  2,
+    "asset":  {
+                  "path":  "/puzzles/assets/2026-03-03.svg",
+                  "alt":  "Daily prompt puzzle",
+                  "type":  "image"
+              },
+    "mode":  "simple",
+    "answer":  {
+                   "negativePrompt":  "lowres, blurry, watercolor, monochrome",
+                   "fullPrompt":  "isometric cyberpunk city block at night, cyan and magenta neon reflections on wet streets, volumetric haze, high detail",
+                   "recipe":  {
+                                  "seed":  203647,
+                                  "aspectRatio":  "1:1",
+                                  "size":  "1024x1024",
+                                  "modelFamily":  "SDXL"
+                              },
+                   "choiceKey":  "B"
+               }
+}

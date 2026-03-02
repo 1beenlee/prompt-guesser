@@ -1,0 +1,40 @@
+﻿{
+    "id":  "2026-03-05",
+    "tags":  [
+                 "daily",
+                 "prompt-guessor"
+             ],
+    "publishAtUtc":  "2026-03-05T00:00:00Z",
+    "choices":  [
+                    {
+                        "key":  "A",
+                        "promptShort":  "Top-down ramen bowl, steam, food photography"
+                    },
+                    {
+                        "key":  "B",
+                        "promptShort":  "Line-art noodle icon"
+                    },
+                    {
+                        "key":  "C",
+                        "promptShort":  "Ramen in anime style with sparkles"
+                    }
+                ],
+    "difficulty":  2,
+    "asset":  {
+                  "path":  "/puzzles/assets/2026-03-05.svg",
+                  "alt":  "Daily prompt puzzle",
+                  "type":  "image"
+              },
+    "mode":  "simple",
+    "answer":  {
+                   "negativePrompt":  "cartoon, flat icon, oversaturated",
+                   "fullPrompt":  "top-down ramen bowl with rich broth, chashu slices, soft egg, subtle steam, realistic food photography lighting",
+                   "recipe":  {
+                                  "seed":  269405,
+                                  "aspectRatio":  "1:1",
+                                  "size":  "1024x1024",
+                                  "modelFamily":  "SDXL"
+                              },
+                   "choiceKey":  "A"
+               }
+}

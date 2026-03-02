@@ -1,0 +1,40 @@
+﻿{
+    "id":  "2026-03-04",
+    "tags":  [
+                 "daily",
+                 "prompt-guessor"
+             ],
+    "publishAtUtc":  "2026-03-04T00:00:00Z",
+    "choices":  [
+                    {
+                        "key":  "A",
+                        "promptShort":  "Astronaut in watercolor, pastel tones"
+                    },
+                    {
+                        "key":  "B",
+                        "promptShort":  "Photoreal moon landing with dust"
+                    },
+                    {
+                        "key":  "C",
+                        "promptShort":  "Low-poly astronaut floating over crater, hard rim light"
+                    }
+                ],
+    "difficulty":  2,
+    "asset":  {
+                  "path":  "/puzzles/assets/2026-03-04.svg",
+                  "alt":  "Daily prompt puzzle",
+                  "type":  "image"
+              },
+    "mode":  "simple",
+    "answer":  {
+                   "negativePrompt":  "grainy, noisy, sketch, oil painting",
+                   "fullPrompt":  "low-poly astronaut floating over a lunar crater, strong rim light, deep space backdrop, stylized 3d render",
+                   "recipe":  {
+                                  "seed":  393492,
+                                  "aspectRatio":  "1:1",
+                                  "size":  "1024x1024",
+                                  "modelFamily":  "SDXL"
+                              },
+                   "choiceKey":  "C"
+               }
+}

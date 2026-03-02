@@ -1,0 +1,40 @@
+﻿{
+    "id":  "2026-03-07",
+    "tags":  [
+                 "daily",
+                 "prompt-guessor"
+             ],
+    "publishAtUtc":  "2026-03-07T00:00:00Z",
+    "choices":  [
+                    {
+                        "key":  "A",
+                        "promptShort":  "Retro handheld console icon"
+                    },
+                    {
+                        "key":  "B",
+                        "promptShort":  "Photoreal modern gamepad studio shot"
+                    },
+                    {
+                        "key":  "C",
+                        "promptShort":  "Retro handheld console on desk, synthwave lighting, grain"
+                    }
+                ],
+    "difficulty":  2,
+    "asset":  {
+                  "path":  "/puzzles/assets/2026-03-07.svg",
+                  "alt":  "Daily prompt puzzle",
+                  "type":  "image"
+              },
+    "mode":  "simple",
+    "answer":  {
+                   "negativePrompt":  "vector flat, daylight, monochrome",
+                   "fullPrompt":  "retro handheld game console on desk, synthwave pink-blue lighting, subtle film grain, nostalgic 90s vibe",
+                   "recipe":  {
+                                  "seed":  531465,
+                                  "aspectRatio":  "1:1",
+                                  "size":  "1024x1024",
+                                  "modelFamily":  "SDXL"
+                              },
+                   "choiceKey":  "C"
+               }
+}
