@@ -1,16 +1,19 @@
-﻿# Prompt Guessor
+# Prompt Guessor
 
-Daily image-based prompt guessing service (v1 MVP).
+An experimental, image-based prompt-guessing game built as a **static-first MVP**. Players inspect an illustration, choose from three prompt candidates, and reveal the original prompt. This is a prototype with a bounded sample puzzle set, **not** an indefinitely replenished live daily service.
 
-## Implemented MVP
-- Next.js static-first app (`src/app`, App Router)
-- Daily puzzle loading by UTC date
-- 3-choice answer flow (A/B/C)
-- Immediate result and full prompt reveal
-- Local stats persistence (LocalStorage)
-- Share text copy (`PromptGuessr #YYYY-MM-DD ✅/❌`)
+## Implemented
 
-## Run
+- Next.js App Router with static export
+- UTC-date-based puzzle lookup for the checked-in puzzle fixtures
+- Three-choice A/B/C guessing, immediate feedback, and full prompt reveal
+- Browser-local stats via `localStorage` (no user account or server-side storage)
+- Copyable share text
+- A **seven-day fixture set, March 2–8, 2026**, with corresponding puzzle metadata and illustrative SVG assets
+- Playwright E2E test setup
+
+## Run locally
+
 ```bash
 npm install
 npm run dev
@@ -18,38 +21,31 @@ npm run dev
 
 Open `http://localhost:3000`.
 
-## Build (Static Export)
+## Static build and deployment preflight
+
 ```bash
 npm run build
-```
-
-For Cloudflare preflight:
-```bash
 npm run verify:cloudflare
 ```
 
-## Data Structure
-- `public/puzzles/daily/YYYY-MM-DD.json`: puzzle metadata and answer
-- `public/puzzles/assets/*`: puzzle image assets
-- `docs/`: product/design/ops reference docs
+The app uses `output: "export"`; generated files are under `out/`. The Cloudflare Pages runbook describes the *intended configuration* and past troubleshooting, not independently verified current public availability:
 
-## Current Sample
-- `public/puzzles/daily/2026-03-02.json`
-- `public/puzzles/assets/2026-03-02.svg`
+[Cloudflare Pages runbook](docs/cloudflare_pages_runbook.md)
 
-## Next Work
-1. Add real image assets and at least 7 daily puzzles.
-2. Add missed-day-aware streak policy and tests.
-3. Add analytics events for share/correctness funnel.
+## Data and project structure
 
-## Cloudflare Pages Settings
-- Repository: `https://github.com/1beenlee/prompt-guesser`
-- Branch: `main`
-- Build command: `npm ci && npm run build`
-- Build output directory: `out`
-- Node version: `20` (`NODE_VERSION=20`)
-- Root directory:
-  - app in repo root: `/`
-  - app in monorepo subfolder: `Project/prompt-guessr`
+- `public/puzzles/daily/YYYY-MM-DD.json` — puzzle metadata and answer
+- `public/puzzles/assets/` — sample assets
+- `src/app/` and `src/components/` — app and game interaction
+- `docs/` — product, design and operational notes
 
-See runbook: `docs/cloudflare_pages_runbook.md`
+Example fixture: [March 2, 2026](public/puzzles/daily/2026-03-02.json)
+
+## Remaining work / limitations
+
+- Extend beyond the seven checked-in fixture days with a real publishing workflow before describing the product as a continuously updated daily game.
+- Verify streak behavior around missed days and edge cases.
+- Define privacy-respecting analytics for the answer/share funnel if there is a need to measure it.
+- Independently verify the target deployment and its access before linking a live service.
+
+**Project status:** MVP / experiment. The demo does not claim production adoption or measured user outcomes.
